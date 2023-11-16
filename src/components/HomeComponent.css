@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+}
 .wrapper {
   height: 100vh;
   width: 100vw;
@@ -9,7 +14,8 @@
   height: 70px;
   display: flex;
   flex-direction: row;
-  border: 1px solid black;
+  border: 1px solid rgb(110, 110, 110);
+  /* border: 1px solid black; */
   position: sticky;
   top: 0;
   background-color: white;
@@ -25,29 +31,35 @@
 .logo {
   width: 150px;
   margin: 5px;
+  cursor: pointer;
 }
 
 .search {
-  width: 450px;
-
+  width: 750px;
+  height:53=4px;
   margin: 6px;
   display: flex;
   flex-direction: row;
 }
 
+
 .signin {
-  width: 150px;
+  width: 200px;
   padding: 5px;
   margin: 5px;
+
 }
 
+
+
 .logoimage {
-  height: 60px;
+  height: 55px;
+  cursor: pointer;
 }
 
 .sidebar {
   width: 200px;
-  border: 1px solid black;
+  border: 1px solid rgb(110, 110, 110);
   display: flex;
   flex-direction: column;
 }
@@ -62,10 +74,92 @@
   justify-content: center;
   margin: 1px;
 }
+.You{
+  height: 220px;
+  background-image: url("./subscriptions.png");
+  background-position: center;
+  
+  background-size: cover;
+  vertical-align: middle;
+  text-align: center;
+  /* background-color: rgba(0, 0, 0, 0.266); */
+  display: flex;
+
+  cursor: pointer;
+}
+.Home{
+  height: 120px;
+  background-image: url("./home.png");
+  background-position: center;
+  
+  background-size: cover;
+  vertical-align: middle;
+  text-align: center;
+  /* background-color: rgba(0, 0, 0, 0.266); */
+  display: flex;
+
+  cursor: pointer;
+
+}
+.Subs{
+  height: 320px;
+  background-image: url("./explore.png");
+  background-position: center;
+  
+  background-size: cover;
+  vertical-align: middle;
+  text-align: center;
+  /* background-color: rgba(0, 0, 0, 0.266); */
+  display: flex;
+
+  cursor: pointer;
+}
+.line{
+  height: 30px;
+  background-image: url("./you.png");
+  background-position: center;
+  
+  background-size: cover;
+  vertical-align: middle;
+  text-align: center;
+  /* background-color: rgba(0, 0, 0, 0.266); */
+  display: flex;
+
+  cursor: pointer;
+
+}
+.mic{
+  background-image: url("./mic.png");
+  margin-left: 5px;
+  height: 55px;
+  cursor: pointer;
+  width: 55px;
+  background-position: center;
+  background-size: cover;
+}
+.sidebarIteme{
+  height: 40px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: rgb(212, 78, 78);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1px;
+}
+.sidebarIteme:hover{
+  background-color: rgb(132, 255, 0);
+  box-shadow: 0px 0px 25px black;
+}
+.sidebarItem:hover{
+  background-color:rgb(255, 0, 0);
+  box-shadow: 0px 0px 25px black;
+}
 
 .videos {
   flex: 1;
   display: flex;
+
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -78,7 +172,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow-y: scroll;
+  overflow-y: hidden;
+  transition: 1s;
+}
+.video:hover{
+  box-shadow: 0px 0px 30px rgb(68, 135, 237);
 }
 
 .thumbnail {
@@ -89,7 +187,9 @@
   width: 100%;
   height: 100%;
   border-radius: 5px;
+  
 }
+
 
 .titlewrapper {
   flex: 1;
@@ -119,27 +219,52 @@
 }
 
 .searchInput {
-  background-color: rgb(240, 238, 238);
+  background-color: rgb(248, 176, 176);
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
   border: 1px solid rgb(176, 175, 175);
   flex: 4;
   padding-left: 15px;
+  cursor: pointer;
+ 
+}
+
+.searchInput:hover{
+  background-color: rgb(211, 37, 37);
+
 }
 
 .searchButton {
   width: 150px;
   flex: 1;
+  color: aliceblue;
+  background-color: rgb(118, 89, 89);
   border: 1px solid rgb(176, 175, 175);
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   padding: 5px;
+  cursor: pointer;
+
+}
+.searchButton:hover{
+  background-color: rgb(220, 3, 3);
+
 }
 
 .signInButton {
-  width: 80%;
-  height: 100%;
-  border-radius: 30px;
+  width: 190px;
+  /* color: rgb(228, 228, 228); */
+  border-color: rgba(124, 123, 123, 0);
+  background-image: url("./Signin.png");
+  background-size: cover;
+  background-position: center;
+  height: 50px;
+  /* border-radius: 30px; */
+  cursor: pointer;
+}
+.signInButton:hover{
+  background-color: rgb(220, 3, 3);
+ 
 }
 
 .channelImage {
